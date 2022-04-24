@@ -21,3 +21,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Process
         run: source upload.sh
+        env: 
+          VLTR_KEY: ${{ secrets.VLTR_KEY }}
