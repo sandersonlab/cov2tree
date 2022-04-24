@@ -1,4 +1,4 @@
-export MYKEY=saddsar324432
+
 mkdir working
 cd working
 # Replace MYSECRETKEY with the contents of the key
