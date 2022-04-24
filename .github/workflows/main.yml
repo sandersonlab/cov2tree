@@ -27,4 +27,4 @@ jobs:
       - name: Process
         run: source upload.sh
         env: 
-          DO_KEY: ${{ secrets.DO_KEY }}
+          MYKEY: ${{ secrets.DO_KEY }}
