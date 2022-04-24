@@ -1,0 +1,1 @@
+s3cmd setcors cors.xml s3://cov2tree
