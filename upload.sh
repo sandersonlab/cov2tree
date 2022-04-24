@@ -1,7 +1,8 @@
-
+export MYKEY=saddsar324432
 mkdir working
 cd working
-sed  's/MYSECRETKEY/'$MYKEY'/g' ../s3cfg > s3cfg
+# Replace MYSECRETKEY with the contents of the key
+sed  "s/MYSECRETKEY/$MYKEY/g" ../s3cfg > s3cfg
 s3cmd put -P ../README.md -c s3cfg s3://cov2tree/README.md
 wget -q https://hgwdev.gi.ucsc.edu/~angie/UShER_SARS-CoV-2/public-latest.metadata.tsv.gz
 wget -q https://raw.githubusercontent.com/theosanderson/taxonium/master/taxoniumtools/test_data/hu1.gb
