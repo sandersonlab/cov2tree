@@ -1,5 +1,5 @@
 [default]
-access_key = SWQGMRKLPA8VGGFHOF60
+access_key = XBI4ZXFH6EZSENVXZZPH 
 access_token = 
 add_encoding_exts = 
 add_headers = 
@@ -31,8 +31,8 @@ gpg_decrypt = %(gpg_command)s -d --verbose --no-use-agent --batch --yes --passph
 gpg_encrypt = %(gpg_command)s -c --verbose --no-use-agent --batch --yes --passphrase-fd %(passphrase_fd)s -o %(output_file)s %(input_file)s
 gpg_passphrase = 
 guess_mime_type = True
-host_base = ewr1.vultrobjects.com
-host_bucket = %(bucket)s.ewr1.vultrobjects.com
+host_base = nyc3.digitaloceanspaces.com
+host_bucket = %(bucket)s.nyc3.digitaloceanspaces.com
 human_readable_sizes = False
 invalidate_default_index_on_cf = False
 invalidate_default_index_root_on_cf = True
@@ -76,6 +76,6 @@ use_http_expect = False
 use_https = True
 use_mime_magic = True
 verbosity = WARNING
-website_endpoint = http://%(bucket)s.s3-website-%(location)s.amazonaws.com/
+website_endpoint = http://%(bucket)s.nyc3.digitaloceanspaces.com
 website_error = 
 website_index = index.html
