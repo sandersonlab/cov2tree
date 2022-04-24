@@ -1,5 +1,4 @@
 
-sudo apt install -y s3cmd
 mkdir working
 cd working
 sed  's/MYSECRETKEY/'$VLTR_KEY'/g' ../s3cfg > s3cfg
