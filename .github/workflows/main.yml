@@ -28,3 +28,4 @@ jobs:
         run: source upload.sh
         env: 
           VLTR_KEY: ${{ secrets.VLTR_KEY }}
+          DO_KEY: ${{ secrets.DO_KEY }}
