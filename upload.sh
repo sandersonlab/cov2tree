@@ -8,4 +8,4 @@ wget -q https://hgwdev.gi.ucsc.edu/~angie/UShER_SARS-CoV-2/public-latest.all.mas
 
 sudo pip3 install taxoniumtools
 usher_to_taxonium --input public-latest.all.masked.pb.gz --output ./public.jsonl.gz --metadata public-latest.metadata.tsv.gz --genbank hu1.gb --columns genbank_accession,country,date,pangolin_lineage
-s3cmd put -P public.jsonl.gz s3://cov2tree/latest_public.jsonl.gz
+s3cmd put -P public.jsonl.gz -c s3cfg s3://cov2tree/latest_public.jsonl.gz 
