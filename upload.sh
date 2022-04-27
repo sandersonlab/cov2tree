@@ -9,7 +9,7 @@ wget -q https://raw.githubusercontent.com/theosanderson/taxonium/master/taxonium
 wget -q https://hgwdev.gi.ucsc.edu/~angie/UShER_SARS-CoV-2/public-latest.all.masked.pb.gz
 wget -q https://raw.githubusercontent.com/theosanderson/treeShears/master/treeshears.py
 
-gunzip https://hgwdev.gi.ucsc.edu/~angie/UShER_SARS-CoV-2/public-latest.all.masked.pb.gz
+gunzip public-latest.all.masked.pb.gz
 python treeshears.py -i public-latest.all.masked.pb -o public-latest.all.masked.sheared.pb
 
 sudo pip3 install taxoniumtools chronumental
