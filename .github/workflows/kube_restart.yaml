@@ -2,14 +2,13 @@ name: KubernetesRestart
 on:
   workflow_dispatch:
 jobs:
-  build:
-runs-on: ubuntu-latest
-steps:
-- name: Kubernetes context
-  uses: Azure/k8s-set-context@v1
-  with:
-    method: kubeconfig
-    kubeconfig: ${{ secrets.KUBE_CONFIG_URL }}
-    
-- name: Deploy
-  run: kubectl rollout restart deployment taxonium-backend-dep
+  restart:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Kubernetes context
+      uses: Azure/k8s-set-context@v1
+      with:
+        method: kubeconfig
+        kubeconfig: ${{ secrets.KUBE_CONFIG_URL }}
+    - name: Deploy
+      run: kubectl rollout restart deployment taxonium-backend-dep
