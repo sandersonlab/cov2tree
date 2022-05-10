@@ -9,5 +9,4 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   download:
-    runs-on: ubuntu-latest
     uses: theosanderson/cov2tree/.github/workflows/kube_restart.yaml@main
