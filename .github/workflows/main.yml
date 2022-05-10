@@ -10,7 +10,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  download:
+  create:
     # The type of runner that the job will run on
     runs-on: macos-latest
     defaults:
@@ -47,3 +47,7 @@ jobs:
           MYKEY: ${{ secrets.DO_KEY }}
       - uses: ./kube_restart.yaml
         secrets: inherit
+  redeploykube:
+    uses: theosanderson/cov2tree/.github/workflows/kube_restart.yaml@main
+    secrets: inherit
+    needs: create
