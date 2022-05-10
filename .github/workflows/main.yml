@@ -45,3 +45,5 @@ jobs:
         run: source upload.sh
         env: 
           MYKEY: ${{ secrets.DO_KEY }}
+      - uses: ./kube_restart.yaml
+        secrets: inherit
