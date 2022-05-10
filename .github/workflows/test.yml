@@ -11,5 +11,5 @@ jobs:
   download:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./kube_restart.yaml
+      - uses: theosanderson/cov2tree/.github/workflows/kube_restart.yaml
         secrets: inherit
