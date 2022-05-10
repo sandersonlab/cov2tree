@@ -10,6 +10,5 @@ jobs:
   # This workflow contains a single job called "build"
   download:
     runs-on: ubuntu-latest
-    steps:
-      - uses: theosanderson/cov2tree/.github/workflows/kube_restart.yaml@master
-        secrets: inherit
+    uses: theosanderson/cov2tree/.github/workflows/kube_restart.yaml@master
+      secrets: inherit
