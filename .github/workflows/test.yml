@@ -9,6 +9,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   download:
+    runs-on: ubuntu-latest
     steps:
       - uses: ./kube_restart.yaml
         secrets: inherit
