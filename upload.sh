@@ -24,5 +24,5 @@ gzip chron_dates.tsv
 gzip chron_tree.nwk
 s3cmd put -P public.jsonl.gz -c s3cfg s3://cov2tree/latest_public.jsonl.gz 
 
-s3cmd put -P chron_dates.tsv -c s3cfg s3://cov2tree/chron_dates.tsv 
-s3cmd put -P chron_tree.nwk -c s3cfg s3://cov2tree/chron_tree.nwk 
+s3cmd put -P chron_dates.tsv.gz -c s3cfg s3://cov2tree/chron_dates.tsv.gz 
+s3cmd put -P chron_tree.nwk.gz -c s3cfg s3://cov2tree/chron_tree.nwk.gz 
