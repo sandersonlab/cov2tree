@@ -12,7 +12,7 @@ wget -q https://raw.githubusercontent.com/theosanderson/treeShears/master/treesh
 sudo pip3 install taxoniumtools chronumental
 
 gunzip public-latest.all.masked.pb.gz
-python3 treeshears.py -i public-latest.all.masked.pb -o public-latest.all.masked.sheared.pb
+python3 treeshears.py -i public-latest.all.masked.pb -o public-latest.all.masked.sheared.pb -T 300
 
 
 usher_to_taxonium --input public-latest.all.masked.sheared.pb --output ./public.jsonl.gz \
