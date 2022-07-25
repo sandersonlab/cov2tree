@@ -19,7 +19,7 @@ usher_to_taxonium --input public-latest.all.masked.pb --output ./public.jsonl.gz
 --metadata public-latest.metadata.tsv.gz --genbank hu1.gb --columns genbank_accession,country,date,pangolin_lineage \
 --chronumental --chronumental_steps=300 --chronumental_reference_node="Wuhan-Hu-1|MN908947.3|2019-12" \
 --overlay_html ../ack.html --title Cov2Tree --remove_after_pipe --chronumental_date_output=chron_dates.tsv --chronumental_tree_output=chron_tree.nwk \
---clade_types=nextstrain,pango --shear --shear_threshold=5000
+--clade_types=nextstrain,pango --shear --shear_threshold=5000 --name_internal_nodes
 
 gzip chron_dates.tsv
 gzip chron_tree.nwk
