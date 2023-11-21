@@ -25,7 +25,7 @@ jobs:
          python-version: 3.9
          channels: conda-forge,bioconda
       - run: |
-          brew install s3cmd
+          brew install s3cmd==2.2.0
           conda info
           conda list
           conda install usher
