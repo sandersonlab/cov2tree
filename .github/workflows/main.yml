@@ -19,7 +19,7 @@ jobs:
         shell: bash -l {0}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: conda-incubator/setup-miniconda@v3
         with:
          activate-environment: usher
          python-version: 3.9
