@@ -43,6 +43,6 @@ jobs:
         env: 
           MYKEY: ${{ secrets.DO_KEY }}
   redeploykube:
-    uses: theosanderson/cov2tree/.github/workflows/kube_restart.yaml@main
+    uses: sandersonlab/cov2tree/.github/workflows/kube_restart.yaml@main
     secrets: inherit
     needs: create
